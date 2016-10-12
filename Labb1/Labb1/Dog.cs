@@ -35,14 +35,16 @@ namespace Labb1
         }
         public void AddDog()
         {
-            Console.WriteLine("Name: ");
+            Console.Write("Name: ");
             Name = Console.ReadLine();
-            Console.WriteLine("Age: ");
+            Console.Write("Age: ");
             Age = int.Parse(Console.ReadLine());
-            Console.WriteLine("Breed: ");
+            Console.Write("Breed: ");
             Breed = Console.ReadLine();
-            string input = Name + "\t" + Age + "\t" + Breed;
+            string input = Name + ", " + Age + ", " + Breed;
             Dogs.Add(input);
+            Console.WriteLine("Dog added, press key to continue.");
+            Console.ReadKey();
         }
         public void RemoveDog()
         {
@@ -72,10 +74,13 @@ namespace Labb1
                         newDog.AddDog();
                         break;
                     case "2":
+                        newDog.ShowList();
                         newDog.RemoveDog();
                     break;
                     case "3":
                         newDog.ShowList();
+                        Console.WriteLine("Press key to continue.");
+                        Console.ReadKey();
                         break;
                     case "4":
                         isProgramOver = true;
