@@ -58,6 +58,7 @@ namespace Labb1
         public static void Menu()
         {
             Dog newDog = new Dog();
+            isProgramOver = false;
             string choice;
 
             do
@@ -88,7 +89,7 @@ namespace Labb1
                     default:
                         break;
                 }
-            } while (choice != "1" && choice != "2" && choice != "3" && choice != "4"); 
+            } while (isProgramOver); 
        } 
 }
 }
