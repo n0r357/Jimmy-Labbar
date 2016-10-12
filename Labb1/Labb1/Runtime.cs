@@ -52,7 +52,11 @@ namespace Labb1
 
             #endregion
 
+            #region Del 3:
+
             Dog.Menu();
+
+            #endregion
         }
     }
 }

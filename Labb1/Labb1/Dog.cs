@@ -28,9 +28,9 @@ namespace Labb1
         {
             int index;
             Console.WriteLine("-------------------------------------");
-            Console.WriteLine("\t{    Current list    }\n");
-            Console.WriteLine("\tName:\tAge:\tBreed:");
+            Console.WriteLine("\t{    Current list    }");
             Console.WriteLine("-------------------------------------");
+            Console.WriteLine("\tName:\tAge:\tBreed:");
             foreach (var dog in Dogs)
             {
                 index = Dogs.IndexOf(dog) + 1;
@@ -46,6 +46,7 @@ namespace Labb1
             Age = int.Parse(Console.ReadLine());
             Console.Write("\tBreed: ");
             Breed = Console.ReadLine();
+
             string input = Name + "\t" + Age + "\t" + Breed;
             Dogs.Add(input);
             Console.WriteLine("-------------------------------------");
@@ -106,7 +107,7 @@ namespace Labb1
                     default:
                         break;
                 }
-            } while (!isProgramOver); 
-       } 
-}
+            } while (!isProgramOver);
+        }
+    }
 }
