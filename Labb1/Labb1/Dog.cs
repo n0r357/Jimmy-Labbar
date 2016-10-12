@@ -27,69 +27,86 @@ namespace Labb1
         public void ShowList()
         {
             int index;
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("\t{    Current list    }\n");
+            Console.WriteLine("\tName:\tAge:\tBreed:");
+            Console.WriteLine("-------------------------------------");
             foreach (var dog in Dogs)
             {
                 index = Dogs.IndexOf(dog) + 1;
-                Console.WriteLine(index + " - " + dog);
+                Console.WriteLine("    " + index + " - " + dog);
             }
         }
         public void AddDog()
         {
-            Console.Write("Name: ");
+            Console.WriteLine("-------------------------------------");
+            Console.Write("\tName: ");
             Name = Console.ReadLine();
-            Console.Write("Age: ");
+            Console.Write("\tAge: ");
             Age = int.Parse(Console.ReadLine());
-            Console.Write("Breed: ");
+            Console.Write("\tBreed: ");
             Breed = Console.ReadLine();
-            string input = Name + ", " + Age + ", " + Breed;
+            string input = Name + "\t" + Age + "\t" + Breed;
             Dogs.Add(input);
-            Console.WriteLine("Dog added, press key to continue.");
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("  Dog added, press key to continue.");
+            Console.WriteLine("-------------------------------------");
             Console.ReadKey();
         }
         public void RemoveDog()
         {
             int input;
-            Console.Write("Select dog to remove: ");
+            Console.WriteLine("-------------------------------------");
+            Console.Write("\tSelect dog to remove: ");
             input = int.Parse(Console.ReadLine());
             Dogs.RemoveAt(input - 1);
-            Console.WriteLine("Dog removed, press key to continue.");
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine(" Dog removed, press key to continue.");
+            Console.WriteLine("-------------------------------------");
             Console.ReadKey();
         }
         public static void Menu()
         {
             Dog newDog = new Dog();
-            isProgramOver = false;
             string choice;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine("1 - Add dog");
-                Console.WriteLine("2 - Remove dog");
-                Console.WriteLine("3 - Show list");
-                Console.WriteLine("4 - Exit");
-                Console.Write("Your choice: ");
+                Console.WriteLine("-------------------------------------");
+                Console.WriteLine("\t1 - Add dog");
+                Console.WriteLine("\t2 - Remove dog");
+                Console.WriteLine("\t3 - Show list");
+                Console.WriteLine("\t4 - Exit");
+                Console.WriteLine("-------------------------------------");
+                Console.Write("\tYour choice: ");
                 switch (choice = Console.ReadLine())
                 {
                     case "1":
                         newDog.AddDog();
+                        isProgramOver = false;
                         break;
                     case "2":
                         newDog.ShowList();
                         newDog.RemoveDog();
-                    break;
+                        isProgramOver = false;
+                        break;
                     case "3":
                         newDog.ShowList();
-                        Console.WriteLine("Press key to continue.");
+                        Console.WriteLine("-------------------------------------");
+                        Console.WriteLine("\tPress key to continue.");
+                        Console.WriteLine("-------------------------------------");
                         Console.ReadKey();
+                        isProgramOver = false;
                         break;
                     case "4":
+                        Console.WriteLine("-------------------------------------");
                         isProgramOver = true;
                         break;
                     default:
                         break;
                 }
-            } while (isProgramOver); 
+            } while (!isProgramOver); 
        } 
 }
 }

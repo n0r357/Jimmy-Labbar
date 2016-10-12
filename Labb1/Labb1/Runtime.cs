@@ -52,12 +52,7 @@ namespace Labb1
 
             #endregion
 
-            Dog.isProgramOver = false;
-
-            do
-            {
-                Dog.Menu();
-            } while (Dog.isProgramOver);
+            Dog.Menu();
         }
     }
 }
