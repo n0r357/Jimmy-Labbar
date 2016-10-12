@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace Labb1
 {
     class Dog
-    {
+    {     
         public static bool isProgramOver;
+        private List<string> dogs = new List<string>();
+
         public string Name { get; set; }
         public int Age { get; set; }
         public string Breed { get; set; }
-        private List<string> dogs = new List<string>();
-
         public List<string> Dogs
         {
             get { return dogs; }
@@ -48,6 +48,7 @@ namespace Labb1
             Breed = Console.ReadLine();
 
             string input = Name + "\t" + Age + "\t" + Breed;
+
             Dogs.Add(input);
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("  Dog added, press key to continue.");
