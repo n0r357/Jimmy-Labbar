@@ -1,3 +1,8 @@
 C:\Users\jimmy\Documents\Visual Studio 2015\Projects\Workshops - OOP\KlasserObjekt\Labb1\Labb1\bin\Debug\Labb1.exe.config
 C:\Users\jimmy\Documents\Visual Studio 2015\Projects\Workshops - OOP\KlasserObjekt\Labb1\Labb1\obj\Debug\Labb1.csprojResolveAssemblyReference.cache
 C:\Users\jimmy\Documents\YHSUST16\OOP\Labbar\Labb1\Labb1\bin\Debug\Labb1.exe.config
+C:\Users\jimmy\Documents\YHSUST16\OOP\Labbar\Labb1\Labb1\bin\Debug\Labb1.exe
+C:\Users\jimmy\Documents\YHSUST16\OOP\Labbar\Labb1\Labb1\bin\Debug\Labb1.pdb
+C:\Users\jimmy\Documents\YHSUST16\OOP\Labbar\Labb1\Labb1\obj\Debug\Labb1.csprojResolveAssemblyReference.cache
+C:\Users\jimmy\Documents\YHSUST16\OOP\Labbar\Labb1\Labb1\obj\Debug\Labb1.exe
+C:\Users\jimmy\Documents\YHSUST16\OOP\Labbar\Labb1\Labb1\obj\Debug\Labb1.pdb
