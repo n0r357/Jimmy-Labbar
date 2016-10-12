@@ -88,7 +88,7 @@ namespace Labb1
                     default:
                         break;
                 }
-            } while (true); 
+            } while (choice != "1" && choice != "2" && choice != "3" && choice != "4"); 
        } 
 }
 }
