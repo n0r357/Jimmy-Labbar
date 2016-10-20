@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Labb3.Event">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAEAAAAAAAEAIAAAAABAQAAAAAAAQA=</HashCode>
+      <FileName>EventManager\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb3.Person">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>EventManager\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb3.EventList">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventManager\EventList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb3.BookingManager">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAEAAAAAAAiAACAABAgAAAAAAAgAAAAAAAAAAgAAA=</HashCode>
+      <FileName>EventManager\BookingManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Labb3.MenuManager">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAABAAAAAACAQAAAAAAA=</HashCode>
+      <FileName>MenuManager\MenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
