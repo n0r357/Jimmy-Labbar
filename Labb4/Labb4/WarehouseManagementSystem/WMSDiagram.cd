@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Labb4.Vehicle">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEBQAAAAAEBAAAAAAAAAAAAAAAAQkAgAABAAA=</HashCode>
+      <FileName>WarehouseManagementSystem\Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb4.MenuManager">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAAAAAQgQAAAACAABAABhBAAAAQCGIRAAAEAQA=</HashCode>
+      <FileName>WarehouseManagementSystem\MenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb4.ListManager">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAgAAAgAAAAAoCAAAgBAAIEAABAQAAIACCABAAA=</HashCode>
+      <FileName>WarehouseManagementSystem\ListManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
