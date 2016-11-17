@@ -10,7 +10,7 @@ namespace Labb13.Managers
 {
     class ItemManager
     {
-        public ListHandler ListEvent;
+        private ListHandler ListEvent;
         public EventHandler RightInputEvent;
         public EventHandler WrongInputEvent;
 
