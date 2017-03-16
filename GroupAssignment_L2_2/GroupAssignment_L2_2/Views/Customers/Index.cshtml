@@ -1,0 +1,17 @@
+﻿@using GroupAssignment_L2_2.Models
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <h1>Customers</h1>
+    <ul>
+        @foreach (Customer customer in ViewBag.Customers)
+        {
+            <li>@customer.Id @customer.CompanyName <a href="/customers/details/@customer.Id">Details</a> <form action="/customers/remove/@customer.Id" method="post"><input type="submit" value="Remove" /></form></li>
+        }
+    </ul>
+    <p><a href="/customers/create">Create Customer</a></p>
+</body>
+</html>

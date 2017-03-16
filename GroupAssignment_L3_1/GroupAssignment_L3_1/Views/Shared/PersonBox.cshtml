@@ -1,0 +1,12 @@
+﻿@using GroupAssignment_L3_1.Models
+@model PeopleIndexVM
+<div style="background-color: white">
+    @if (Model.ShowAsHighlighted)
+    {
+        <b>First name: </b>@Model.Name <hr><b>E-mail: </b><b style="color:green;">@Model.Email</b><hr><form asp-action="details/@Model.Id" method="get"><input type="submit" value="EDIT" /></form>
+    }
+    else
+    {
+        <b>First name: </b>@Model.Name <hr><b>E-mail: </b><b>@Model.Email</b><hr><form asp-action="details/@Model.Id" method="get"><input type="submit" value="EDIT" /></form>
+    }
+</div>

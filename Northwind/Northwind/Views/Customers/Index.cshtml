@@ -1,0 +1,17 @@
+﻿@using Northwind.Models
+@model IEnumerable<CustomersIndexVM>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customers</title>
+</head>
+<body>
+    <h1>Customers</h1>
+    <ul>
+        @foreach (var customer in Model)
+        {
+            <li>@customer.CompanyName</li>
+        }
+    </ul>
+</body>
+</html>

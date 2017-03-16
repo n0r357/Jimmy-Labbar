@@ -1,0 +1,29 @@
+﻿@model UserLoginVM
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Log In</h1>
+<form asp-controller="home" asp-action="index" method="post">
+    <label asp-for="@Model.UserName"></label>
+    <br />
+    <input asp-for="@Model.UserName" />
+    <br />
+    <i><span asp-validation-for="@Model.UserName"></span></i>
+    <br />
+    <br />
+    <label asp-for="@Model.Password"></label>
+    <br />
+    <input asp-for="@Model.Password" />
+    <br />
+    <i><span asp-validation-for="@Model.Password"></span></i>
+    <br />
+    <br />
+    <label asp-for="@Model.AcceptCookies"></label>
+    <br />
+    <input asp-for="@Model.AcceptCookies" />
+    <br />
+    <i><span asp-validation-for="@Model.AcceptCookies"></span></i>
+    <br />
+    <br />
+    <input type="submit" value="Sign In" />
+</form>

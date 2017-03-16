@@ -1,0 +1,24 @@
+﻿@model DisplayVM
+<br />
+@if (Model.IsCreated)
+{
+    <div class="alert alert-success alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Information saved.</strong>
+    </div>
+}
+else if (Model.CompanyName == null && Model.Email != null)
+{
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Incomplete information.</strong>
+    </div>
+}
+else if (Model.CompanyName == null && Model.Email == null)
+{
+    <div class="alert alert-danger alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Alert!</strong> No information saved.
+    </div>
+}
+<br />

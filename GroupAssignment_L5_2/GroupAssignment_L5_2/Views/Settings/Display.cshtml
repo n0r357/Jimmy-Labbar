@@ -1,0 +1,9 @@
+﻿@model DisplayVM
+@{
+    ViewBag.Title = "Display Company";
+}
+<h1>Display Company</h1>
+<div>@Html.Partial("CreateAlert", Model)</div>
+<div align="left"><strong>Support E-mail:</strong><i style="float: right">@Model.Email</i></div>
+<div align="left"><strong>Company Name:</strong><i style="float: right">@Model.CompanyName</i></div>
+

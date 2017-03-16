@@ -1,0 +1,36 @@
+﻿@model CarsCreateVM
+@{
+    ViewBag.Title = "Create";
+}
+<h1>Create Car</h1>
+<form asp-action="create" method="post">
+    <label asp-for="Brand"></label>
+    <br />
+    <input asp-for="Brand" />
+    <br />
+    <i><span asp-validation-for="Brand"></span></i>
+    <br />
+    <br />
+    <label asp-for="Doors"></label>
+    <br />
+    <input asp-for="Doors" />
+    <br />
+    <i><span asp-validation-for="Doors"></span></i>
+    <br />
+    <br />
+    <label asp-for="TopSpeed"></label>
+    <br />
+    <input asp-for="TopSpeed" />
+    <br />
+    <i><span asp-validation-for="TopSpeed"></span></i>
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Create Car" />
+</form>
+<br />
+@section scripts
+{
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+}

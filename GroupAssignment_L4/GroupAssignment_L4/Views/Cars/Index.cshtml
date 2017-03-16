@@ -1,0 +1,44 @@
+﻿@model IEnumerable<CarsIndexVM>
+@{
+    ViewBag.Title = "Index";
+}
+    <h1>Car List</h1>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="text-align: left">Car Brand:</th>
+                <th style="text-align: center">Doors:</th>
+                <th style="text-align: right">Top Speed:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <dl>
+                        @foreach (var car in Model)
+                        {
+                            <dd style="text-align: left ">@Html.Partial("IndexBox", car)</dd>
+                        }
+                    </dl>
+                </td>
+                <td>
+                    <dl>
+                        @foreach (var car in Model)
+                        {
+                            <dd style="text-align: center">@car.Doors</dd>
+                        }
+                    </dl>
+                </td>
+                <td>
+                    <dl>
+                        @foreach (var car in Model)
+                        {
+                            <dd style="text-align: right">@car.TopSpeed</dd>
+                        }
+                    </dl>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />

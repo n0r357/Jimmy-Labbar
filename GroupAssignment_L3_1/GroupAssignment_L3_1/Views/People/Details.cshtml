@@ -1,0 +1,23 @@
+﻿@model PeopleCreateVM
+@{
+    ViewBag.Title = "Details";
+}
+<h1>Edit person:</h1>
+<h2>ID: @Model.Id</h2>
+<form asp-action="details" method="post">
+    <label asp-for="Name"></label>
+    <br />
+    <input value="@Model.Name" asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <br />
+    <label asp-for="Email"></label>
+    <br />
+    <input value="@Model.Email" asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <br />
+    <input asp-for="AcceptTerms" type="checkbox" value="true">
+    <label asp-for="AcceptTerms"></label>
+    <span asp-validation-for="AcceptTerms"></span>
+    <br />
+    <input type="submit" value="Edit Person" />
+</form>

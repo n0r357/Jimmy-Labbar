@@ -1,0 +1,12 @@
+﻿@model IEnumerable<PeopleIndexVM>
+@{
+    ViewBag.Title = "League Of Legends";
+}
+<ul>
+    @foreach (var person in Model)
+    {
+        <li>@Html.Partial("PersonBox", person)</li>
+    }
+</ul>
+<br />
+<form asp-action="create" method="get"><input type="submit" value="Create Person" /></form>

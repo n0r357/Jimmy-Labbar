@@ -1,0 +1,14 @@
+﻿body {
+    background: white;
+    text-align: center;
+    min-width: 660px;
+    font-family: arial, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    list-style: upper-roman;
+}

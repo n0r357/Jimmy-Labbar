@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Customer>
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Customers</h1>
+<ul class="list-group">
+    @foreach (var customer in Model)
+    {
+        <li class="list-group-item" customer-id="@customer.Id" customer-name="@customer.Name" customer-city="@customer.City">@customer.Name</li>
+    }
+</ul>
+<div style="text-align: left" class="well" id="info"></div>
+@section scripts
+{
+    <script>
+        var info = $("#info");
+        info.hide();
+        $("li").mouseenter(function () {
+            info.show();
+            var id = $(this).attr("customer-id");
+            var name = $(this).attr("customer-name");
+            var city = $(this).attr("customer-city");
+            info.append("<strong>Id: </strong>" + "<i style='float: right'>" + id + "</i><br>");
+            info.append("<strong>Name: </strong>" + "<i style='float: right'>" + name + "</i><br>");
+            info.append("<strong>City: </strong>" + "<i style='float: right'>" + city + "</i>");
+        });
+        $("li").mouseleave(function () {
+            info.empty();
+            info.hide();
+        });
+    </script>
+}
